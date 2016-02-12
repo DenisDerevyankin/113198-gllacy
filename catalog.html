@@ -3,114 +3,121 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Gllacy shop</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link href="css/style.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="css/style.css" rel="stylesheet">
 	</head>
+	
+	
 	<body>
-	      <!--    Хедер страницы   -->
+		
+		<!--    Хедер страницы   -->
 		<header class="main-header">
-		<!--  <img class="index-logo" src="img/Logo.svg" width="154" height="75" alt=""> -->
+			<!--  <img class="index-logo" src="img/Logo.svg" width="154" height="75" alt=""> -->
           
 			<!--  Основная навигация  -->
 			<div class="container clearfix">
 				
 				<nav class="main-navigation">
-                   <ul>
-                      <li>
-                        <span>Каталог</span>
-                      </li>
-                      <li>
-                          <a href="#">Доставка и оплата</a>
-                      </li>
-                      <li>
-                          <a href="#">О компании</a>
-                      </li>
-                  </ul>
+					<ul>
+						<li>
+							<span>Каталог</span>
+						</li>
+						<li>
+							<a href="#">Доставка и оплата</a>
+						</li>
+						<li>
+							<a href="#">О компании</a>
+						</li>
+					</ul>
 				</nav>
 				
-              <!-- Поиск, логин, корзина -->
-			   <div class="user-action"> 
-                 <ul>
-					<li>
-						<a href="#" class="user-action-search">Поиск</a>
-					</li>
-					<li>
-						<a href="#" class="user-action-login">Вход</a>
-					</li>
-					<li>
-						<a href="#" class="user-action-cart">Корзина</a>
-					</li>
-				</ul>
-			   </div>
+				<!-- Поиск, логин, корзина -->
+				<div class="user-action"> 
+					<ul>
+						<li>
+							<a href="#" class="user-action-search">Поиск</a>
+						</li>
+						<li>
+							<a href="#" class="user-action-login">Вход</a>
+						</li>
+						<li>
+							<a href="#" class="user-action-cart">Корзина</a>
+						</li>
+					</ul>
+				</div>
               
-           
-              <ul class="breacrumbs">
-					<li><a href="">Главная</a></li>
-					<li><a href="">Каталог</a></li>
-                    <li><span class="breacrumbs-checked">Сливочное</span></li>
-		      </ul>
-         
-              
-              <!-- Контакты и время работы -->
-			<div class="intelligence">
-				<p><b class="intelligence-servicetime">С 10 до 20 ежедневно</b>
-				<b class="intelligence-phone">8 812 450-25-25</b></p>
+				<!-- Контакты и время работы -->
+				<div class="intelligence">
+					<p><b class="intelligence-servicetime">С 10 до 20 ежедневно</b>
+						<b class="intelligence-phone">8 812 450-25-25</b></p>
+				</div>
 			</div>
 			
-			</div>
+			
 		</header>  
 		
 		
 		<main class="container clearfix">
-			<h1 class="catalog-name">Сливочное мороженное</h1>
+
+			<!--  Дополнительная навигация  -->
+			<ul class="breacrumbs">
+				<li><a href="">Главная</a></li>
+				<li><a href="">Каталог</a></li>
+				<li><span class="breacrumbs-checked">Сливочное</span></li>
+			</ul>
 			
+			
+			<h1 class="catalog-name">Сливочное мороженное</h1>
+
 			<!-- Фильтры -->
 			<div class="filters">
 				<form action="https://echo.htmlacademy.ru" method="post">
 				
 					<div class="filters-top clearfix">
 							
-                      <div class="filters-top-sort">
-                        <h3 class="filters-top-name">Сортировка</h3>
+						<div class="filters-top-sort">
+							<h3 class="filters-top-name">Сортировка</h3>
 							<select class="filters-window">
 								<option value="popular">По популярности</option>
 								<option value="cost">По цене</option>
 							</select>
-                      </div>
-                            <div class="filters-top-pricecntrl">
-								<h3 class="filters-top-name">Цена 100 руб. - 500 руб.</h3>
-								<input class="min-price" type="text">
-								<input class="max-price" type="text">
-							</div>
-					<div class="filters-top-fat">
-                        <h3 class="filters-top-name">Жирность</h3>
+						</div>
+	
+						<div class="filters-top-pricecntrl">
+							<h3 class="filters-top-name">Цена 100 руб. - 500 руб.</h3>
+							<input class="min-price" type="text">
+							<input class="max-price" type="text">
+						</div>
+						<div class="filters-top-fat">
+							<h3 class="filters-top-name">Жирность</h3>
 							<label><input type="radio" value="0" name="fat">0%</label>
 							<label><input type="radio" value="10" name="fat">10%</label>
 							<label><input type="radio" value="30" name="fat">30%</label>
 							<label><input type="radio" value="more-30" name="fat">свыше 30%</label>
-                      </div>
+						</div>
 					</div>
 					
 					<div class="filters-bottom clearfix">
 					
-                        <h3 class="filters-top-name">Наполнители</h3>
-							<label><input type="checkbox" value="chocolate">шоколадные</label>
-							<label><input type="checkbox" value="chocolate">сахарные присыпки</label>
-							<label><input type="checkbox" value="chocolate">фрукты</label>
-							<label><input type="checkbox" value="chocolate">сиропы</label>
-							<label><input type="checkbox" value="chocolate">джемы</label>
+						<h3 class="filters-top-name">Наполнители</h3>
+						<label><input type="checkbox" value="chocolate">шоколадные</label>
+						<label><input type="checkbox" value="chocolate">сахарные присыпки</label>
+						<label><input type="checkbox" value="chocolate">фрукты</label>
+						<label><input type="checkbox" value="chocolate">сиропы</label>
+						<label><input type="checkbox" value="chocolate">джемы</label>
 
 						<input type="submit" value="применить">
 						
 					</div>
 					
 				</form>
+				
 			</div>
 			
 			<div class="catalog-shop clearfix">
                 
-                <article class="catalog-shop-item">
-                    <a href="#"><img class="shop-item-pic" src="img/ContentCream1.png" width="200" height="200" alt=""></a>
+				<article class="catalog-shop-item">
+					<a href="#"><img class="shop-item-pic" src="img/ContentCream1.png" width="200" height="200" alt=""></a>
 					<a class="shop-item-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
 				</article>
 				
@@ -129,7 +136,7 @@
 					<a class="shop-item-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 				</article>
                 
-                <article class="catalog-shop-item">
+				<article class="catalog-shop-item">
 					<a href="#"><img class="shop-item-pic" src="img/ContentCream5.png" width="200" height="200" alt=""></a>
 					<a class="shop-item-link" href="#">Сливочное с брустничным джемом</a>
 				</article>
@@ -149,7 +156,7 @@
 					<a class="shop-item-link" href="#">Сливочное с шоколадной стружкой</a>
 				</article>
                 
-                 <article class="catalog-shop-item">
+				<article class="catalog-shop-item">
 					<a href="#"><img class="shop-item-pic" src="img/ContentCream9.png" width="200" height="200" alt=""></a>
 					<a class="shop-item-link" href="#">Сливочно-ванильное с кусочками шоколада</a>
 				</article>
@@ -169,40 +176,42 @@
 					<a class="shop-item-link" href="#">Сливочное с мятным сиропом</a>
 				</article>
                 
-            </div>
+			</div>
 			
-            <div class="shop-navigation">
-                <ul>
-                    <li><span class="shop-navigation-checked">1</span></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">5</a></li>
-                    <li><a href="">&gt;</a></li>
-                </ul>
-            </div>
+			<!-- Навигация по страница товара -->
+			<div class="shop-navigation">
+				<ul>
+					<li><span class="shop-navigation-checked">1</span></li>
+					<li><a href="">2</a></li>
+					<li><a href="">3</a></li>
+					<li><a href="">4</a></li>
+					<li><a href="">5</a></li>
+					<li><a href="">&gt;</a></li>
+				</ul>
+			</div>
 		</main>
 		
+		<!-- Футер -->
 		<footer class="main-footer ">
-		<div class="container clearfix">
-			<section class="footer-social">
-				<a class="social-btn social-btn-twit" href="#">Твиттер</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-				<a class="social-btn social-btn-fd" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>  
-			</section>
+			<div class="container clearfix">
+				<section class="footer-social">
+					<a class="social-btn social-btn-twit" href="#">Твиттер</a>
+					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+					<a class="social-btn social-btn-fd" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>  
+				</section>
 			
-			<section class="footer-links">
-				<a href="#">Для поставщиков</a>
-				<a href="#">О производстве</a>
-				<a href="#">Наши документы</a>
-				<a href="#">Экологические стандарты</a>
-			</section>
+				<section class="footer-links">
+					<a href="#">Для поставщиков</a>
+					<a href="#">О производстве</a>
+					<a href="#">Наши документы</a>
+					<a href="#">Экологические стандарты</a>
+				</section>
 			
-			<section class="footer-copyright">
-                 <p>Сделано в <a href="#">HTML Academy 2016</a>
-            </section>
-          </div> 
+				<section class="footer-copyright">
+					<p>Сделано в <a href="#">HTML Academy 2016</a></p>
+				</section>
+			</div> 
 		</footer>
 		
 	</body>

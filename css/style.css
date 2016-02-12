@@ -18,7 +18,6 @@ h2{
   font-family: "Roboto";
   color: rgb(0, 0, 0);
   line-height: 1.25;
-  
 }
 
 .clearfix::after {
@@ -35,12 +34,9 @@ h2{
   float: left;
   width: 530px;
   min-height: 75px;
-  
 }
 
 .user-action {
-
-  
   float: left;
   width: 260px;
   min-height: 75px;
@@ -48,15 +44,11 @@ h2{
 }
 
 .container {
-
-  
   margin: 0 auto;
   width: 860px;
 }
 
 .intelligence {
-
-  
   float: right;
   width: 174px;
   min-height: 40px;
@@ -64,7 +56,6 @@ h2{
 
 .index-logo {
   float: left;
-  
 }
 
 .page-name {
@@ -84,8 +75,6 @@ h2{
 }
 
 .gratis-raspberry {
-
-  
   float:left;
   height: 100%;
   width: 420px;
@@ -93,31 +82,23 @@ h2{
 }
 
 .gratis {
-
-  
   height: 200px;
   width: 100%;
   margin-bottom: 40px;
 }
 
 .gratis-chocolate {
-
-  
   float:left;
   height: 100%;
   width: 420px;
 }
 
 .shop {
-
-  
   height: 280px;
   margin-bottom: 35px;
 }
 
 .shop-item {
-
-  
   float: left;
   height: 100%;
   width: 200px;
@@ -130,7 +111,6 @@ h2{
 }
 
 .information {
-
   height: 375px;
   margin-bottom: 38px;
 }
@@ -151,15 +131,11 @@ h2{
 }
 
 .dump {
-
-  
   height: 224px;
   margin-bottom: 40px;
 }
 
 .dump-news {
-
-  
   float: left;
   height: 100%;
   width: 420px;
@@ -167,8 +143,6 @@ h2{
 }
 
 .dump-subscription {
-
-  
   float: left;
   height: 100%;
   width: 420px;
@@ -179,8 +153,6 @@ h2{
 }
 
 .map-contacts {
-
-  
   float: right;
   margin-right: 20px;
   margin-top: 65px;
@@ -193,8 +165,6 @@ h2{
 }
 
 .footer-social {
-
-  
   float: left;
   height: 98px;
   width: 200px;
@@ -202,8 +172,6 @@ h2{
 }
 
 .footer-links {
-
-  
   float: left;
   width: 420px;
   height: 98px;
@@ -211,8 +179,6 @@ h2{
 }
 
 .footer-copyright {
-
-  
   float: left;
   width: 200px;
   height: 98px;
@@ -225,7 +191,7 @@ h2{
 }
 
 .breacrumbs {
-  float: left;
+  height: 20px;
 }
 
 
@@ -239,29 +205,21 @@ h2{
 }
 
 .filters {
-
-  
   height: 140px;
   margin-bottom: 30px;
 }
 
 .catalog-shop {
-
-  
   min-height: 897px;
 }
 
 .filters-top {
-
   float: left;
   width: 100%;
   height: 65px;
-  
 }
 
 .filters-bottom {
-
-  
   float: left;
   width: 100%;
   height: 75px;
@@ -275,7 +233,6 @@ h2{
 
 .filters-top-pricecntrl {
   float: left;
-  
 }
 
 .filters-top-fat {
@@ -287,8 +244,6 @@ h2{
 }
 
 .catalog-shop-item {
-
-  
   float: left;
   width: 200px;
   height: 299px;
@@ -302,6 +257,5 @@ h2{
 
 
 .shop-navigation {
-  
   height: 153px;
 }
