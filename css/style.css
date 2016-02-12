@@ -27,13 +27,13 @@ h2{
 }
 
 .main-header {
+	min-height: 115px;
 }
 
 .main-navigation {
   float: left;
   margin-left: 175px;
   width: 355px;
-  min-height: 75px;
 }
 
 .user-action {
@@ -66,8 +66,6 @@ h2{
   margin-top: 400px;
 }
 
-
-
 .slader-and-btn {
   clear: both;
   min-height: 105px;
@@ -76,7 +74,6 @@ h2{
 
 .gratis-raspberry {
   float:left;
-  height: 100%;
   width: 420px;
   margin-right: 20px;
 }
@@ -89,49 +86,43 @@ h2{
 
 .gratis-chocolate {
   float:left;
-  height: 100%;
   width: 420px;
 }
 
 .shop {
-  height: 280px;
   margin-bottom: 35px;
 }
 
 .shop-item {
   float: left;
-  height: 100%;
   width: 200px;
   margin-right: 20px;
 }
 
 .shop-item:last-child {
   margin-right: 0px;
-
 }
 
 .information {
-  height: 375px;
   margin-bottom: 38px;
 }
 
 .information-head {
-  margin-bottom: 0px;
-  height: 95px;
+  margin-bottom: 20px;
 }
 
-.information-point {
+/*.information-point {
   float: left;
-  height: 140px;
+  min-height: 140px;
   width: 420px;
 }
 
 .information-point:nth-child(2n) {
   float: right;
 }
+*/
 
 .dump {
-  height: 224px;
   margin-bottom: 40px;
 }
 
@@ -149,7 +140,8 @@ h2{
 }
 
 .map {
-  height: 430px;
+  min-height: 430px;
+  width: 100%;
 }
 
 .map-contacts {
@@ -161,12 +153,11 @@ h2{
 }
 
 .main-footer {
-
+	min-height: 98px;
 }
 
 .footer-social {
   float: left;
-  height: 98px;
   width: 200px;
   margin-right: 20px;
 }
@@ -174,27 +165,23 @@ h2{
 .footer-links {
   float: left;
   width: 420px;
-  height: 98px;
   margin-right: 20px;
 }
 
 .footer-copyright {
   float: left;
   width: 200px;
-  height: 98px;
 }
 
-.information-left {
-  margin-right: 20px;
-  height: 100%;
-  width: 
+.information-point {
+	float: left;
+	width: 345px;
+	padding-left: 75px;
+	vertical-align: bottom;
 }
 
 .breacrumbs {
-  height: 20px;
 }
-
-
 
 .del-lineheight {
   line-height: 0px;
@@ -205,24 +192,21 @@ h2{
 }
 
 .filters {
-  height: 140px;
   margin-bottom: 30px;
 }
 
 .catalog-shop {
-  min-height: 897px;
+ 
 }
 
 .filters-top {
   float: left;
   width: 100%;
-  height: 65px;
 }
 
 .filters-bottom {
   float: left;
   width: 100%;
-  height: 75px;
   margin-top: 0px;
 }
 
@@ -246,7 +230,7 @@ h2{
 .catalog-shop-item {
   float: left;
   width: 200px;
-  height: 299px;
+  min-height: 300px;
   margin-right: 20px;
   
 }
@@ -255,7 +239,9 @@ h2{
   margin-right: 0px;
 }
 
-
 .shop-navigation {
-  height: 153px;
+}
+
+.information-right {
+	
 }
