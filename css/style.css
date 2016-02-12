@@ -27,12 +27,12 @@ h2{
 }
 
 .main-header {
- 
 }
 
 .main-navigation {
   float: left;
-  width: 530px;
+  margin-left: 175px;
+  width: 355px;
   min-height: 75px;
 }
 
