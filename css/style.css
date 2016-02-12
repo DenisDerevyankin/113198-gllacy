@@ -1,22 +1,20 @@
 body{
-  font-size: 16px;
-  font-family: "Roboto";
-  color: rgb(0, 0, 0);
-  line-height: 1.375;
+	min-width: 900px;
+	font-family: "Roboto", "Arial", sans-serif; 
+	font-size: 18px;
+	line-height: 22px;
+	background-color: #849d8f;
+	color: #ffffff;
 }
 
 h1{
   font-size: 35px;
-  font-family: "Roboto";
-  color: rgb(0, 0, 0);
   font-weight: bold;
   line-height: 0.857;
 }
 
 h2{
   font-size: 24px;
-  font-family: "Roboto";
-  color: rgb(0, 0, 0);
   line-height: 1.25;
 }
 
@@ -27,20 +25,80 @@ h2{
 }
 
 .main-header {
-	min-height: 115px;
+	min-height: 75px;
+}
+
+.index-logo {
+	float: left;
+	background-image: url("/img/LogoGllacy.svg");
+	background-repeat: no-repeat;
+	width: 154px;
+	height: 64px;
+	margin-left: -6px;
+	margin-right: 25px;
 }
 
 .main-navigation {
   float: left;
-  margin-left: 175px;
-  width: 355px;
+  margin-right: 67px;
+}
+
+.main-navigation a{
+	color: white;
+	font-size: 16px;
+	display: block;
+	padding-right: 28px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+  
+}
+
+.main-navigation li:last-child a{
+	padding-right: 0px;
+}
+
+
+.main-navigation ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-navigation li{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 20px;
 }
 
 .user-action {
-  float: left;
-  width: 260px;
-  min-height: 75px;
-  margin-left: 70px;
+  float: right;
+  width: 264px;
+}
+
+.user-action ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.user-action li{
+  display: inline-block;
+  padding-top: 26px;
+  padding-bottom: 20px;
+  vertical-align: top;
+  margin-right: 9px;
+}
+
+.user-action ul li:last-child{
+  margin-right: 0px;
+}
+
+.user-action a{
+  display: block;
+  background-color: #a8bdb1;
+  
 }
 
 .container {
@@ -50,12 +108,13 @@ h2{
 
 .intelligence {
   float: right;
-  width: 174px;
-  min-height: 40px;
+  width: 170px;
+  text-align: right;
+  padding: 0px;
 }
 
-.index-logo {
-  float: left;
+.intelligence p{
+  margin: 0;
 }
 
 .page-name {
@@ -64,6 +123,11 @@ h2{
   text-align: center;
   min-height: 105px;
   margin-top: 400px;
+}
+
+.page-name h1{
+  font-size: 60px;
+  
 }
 
 .slader-and-btn {
@@ -105,6 +169,7 @@ h2{
 
 .information {
   margin-bottom: 38px;
+	color: #000000;
 }
 
 .information-head {
@@ -124,6 +189,7 @@ h2{
 
 .dump {
   margin-bottom: 40px;
+	color: #000000;
 }
 
 .dump-news {
@@ -150,6 +216,7 @@ h2{
   margin-top: 65px;
   width: 300px;
   min-height: 305px;
+	color: #000000;
 }
 
 .main-footer {
@@ -181,7 +248,26 @@ h2{
 }
 
 .breacrumbs {
+  float: left;
+  width: 690px;
+  list-style: none;
+  font-size: 0;
+  padding: 0;
+  margin: 0;
 }
+
+.breacrumbs li {
+  display: inline-block;
+  line-height: 20px;
+  margin-top: 22px;
+}
+
+.breacrumbs a{
+  font-size: 14px;
+  margin-right: 22px;
+  color: white;
+}
+
 
 .del-lineheight {
   line-height: 0px;
@@ -244,4 +330,26 @@ h2{
 
 .information-right {
 	
+}
+
+.user-action-search {
+  width: 34px;
+  border-radius: 17px;
+}
+
+.user-action-login {
+  width: 94px;
+  border-radius: 17px;
+}
+.user-action-cart {
+  width: 118px;
+  border-radius: 17px;
+}
+
+.intelligence-servicetime {
+  font-size: 14px;
+}
+
+.intelligence-phone {
+  font-size: 22px;
 }
