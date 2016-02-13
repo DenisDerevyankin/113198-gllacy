@@ -7,16 +7,7 @@ body{
 	color: #ffffff;
 }
 
-h1{
-  font-size: 35px;
-  font-weight: bold;
-  line-height: 0.857;
-}
 
-h2{
-  font-size: 24px;
-  line-height: 1.25;
-}
 
 .clearfix::after {
   content: "";
@@ -100,7 +91,7 @@ h2{
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
-	border-radius: 15px;
+	border-radius: 10px;
 	display: none;
 }
 
@@ -109,14 +100,11 @@ h2{
 }
 
 .main-navigation-sub a{
-	display: block;
+	
 	font-size: 14px;
 	color: black;
 	text-decoration: none;
-	padding-left: 22px;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	width: 143px;
+	
 }
 
 .main-navigation-sub li:first-child a{
@@ -124,12 +112,34 @@ h2{
 	padding-top: 13px;
 } 
 
-.main-navigation-sub a:hover{
+.main-navigation-sub li{
+	display: block;
+	padding-left: 22px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	width: 143px;
+}
+
+.main-navigation-sub li:first-child{
+	font-size: 14px;
+	color: black;
+}
+
+.main-navigation-sub li:first-child:hover{
+	background-color: white;
+	border-radius: 10px;
+}
+
+.main-navigation-sub li:hover{
 	background-color: #fbded7;
 }
 
-.main-navigation-sub a:active{
+.main-navigation-sub li:active{
 	background-color: #f6b5a5;
+}
+
+.main-navigation-sub li:last-child{
+	border-radius: 10px;
 }
 
 .user-action {
@@ -192,6 +202,10 @@ h2{
   margin-top: 400px;
 }
 
+.page-name h1 {
+	line-height: 60px;
+}
+
 .page-name h1{
   font-size: 60px;
   
@@ -205,19 +219,32 @@ h2{
 
 .gratis-raspberry {
   float:left;
-  width: 420px;
+  width: 400px;
   margin-right: 20px;
+  background-image: url("/img/BkgrRaspberries.png") /*no-repeat 420px 229px*/;
+  background-repeat: no-repeat;
+  background-size: 420px 230px;
+  border-radius: 17px;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .gratis {
-  height: 200px;
   width: 100%;
   margin-bottom: 40px;
 }
 
 .gratis-chocolate {
   float:left;
-  width: 420px;
+  width: 400px;
+  background-image: url("/img/BkgrChocolate.png") /*no-repeat 420px 229px*/;
+  background-repeat: no-repeat;
+  background-size: 420px 230px;
+  border-radius: 17px;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .shop {
@@ -264,6 +291,7 @@ h2{
   height: 100%;
   width: 420px;
   margin-right: 20px;
+  background-image: url("/img/BkgrRaspberries.png") no-repeat 420px 220px;
 }
 
 .dump-subscription {
@@ -477,8 +505,8 @@ h2{
 .sprite-iconLove {
 	top: 3px;
 	left: 0px;
-    width: 17px;
-    height: 16px;
+    width: 20px;
+    height: 17px;
     background-position: -336px -9px;
 }
 
@@ -532,5 +560,23 @@ h2{
 	top: 0;
 	height: 0;
 	width: 106px;
-	height: 36px;
+	height: 35px;
+}
+
+.gratis-btn {
+	float: right;
+	width: 168px;
+	right: 0px;
+	bottom: 0px;
+	margin-top: 5px;
+	margin-right: 20px;
+	margin-bottom: 24px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding-bottom: 14px;
+	padding-top: 14px;
+	border-radius: 20px;
+	background-color: #ed6140;
+	
 }
