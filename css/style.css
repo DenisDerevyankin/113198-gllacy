@@ -28,6 +28,7 @@ h2{
 	min-height: 75px;
 }
 
+/*Если подключать через css*/
 .index-logo {
 	float: left;
 	background-image: url("/img/LogoGllacy.svg");
@@ -46,14 +47,19 @@ h2{
 .main-navigation a{
 	color: white;
 	font-size: 16px;
-	display: block;
-	padding-right: 28px;
-	padding-bottom: 30px;
-	padding-top: 30px;
-  
+	display: block;	
+	
+	height: 33px;
+	border-radius: 10px 10px;
 }
 
-.main-navigation li:last-child a{
+.main-navigation a:hover{
+	background-color:white;
+	color:black;
+	text-decoration: none;
+}
+
+.main-navigation li:last-child {
 	padding-right: 0px;
 }
 
@@ -67,8 +73,11 @@ h2{
 
 .main-navigation li{
 	display: inline-block;
-	vertical-align: top;
 	line-height: 20px;
+	padding-right: 28px;
+	padding-top: 21px;
+	padding-bottom: 21px;
+	
 }
 
 .user-action {
