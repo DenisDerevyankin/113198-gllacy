@@ -252,9 +252,18 @@ body{
 }
 
 .shop-item {
+  position: relative;
   float: left;
   width: 200px;
   margin-right: 20px;
+  margin-top: 40px;
+  text-align: center;
+	min-height: 282px;
+}
+
+.shop-item a{
+	color: white;
+	font-size: 16px;
 }
 
 .shop-item:last-child {
@@ -263,11 +272,20 @@ body{
 
 .information {
   margin-bottom: 38px;
-	color: #000000;
+  color: #000000;
+  background-image: url("/img/PatternWafer.jpg");
+  border-radius: 20px;
+	height: 375px;/*Исправить на мин*/
 }
 
 .information-head {
+  float: left;
   margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-left: 20px;
+  width: 90%;
 }
 
 /*.information-point {
@@ -360,9 +378,14 @@ body{
 
 .information-point {
 	float: left;
-	width: 345px;
-	padding-left: 75px;
-	vertical-align: bottom;
+	position: relative;
+	width: 344px;
+	padding-left: 78px;
+	font-size: 16px;
+}
+
+.information-point p{
+	margin-top: 0px;
 }
 
 .breacrumbs {
@@ -579,4 +602,47 @@ body{
 	border-radius: 20px;
 	background-color: #ed6140;
 	
+}
+
+.shop-item-sticker-hit {
+	position: absolute;
+	width: 61px;
+	height: 61px;
+	background-image: url("/img/IconHit.png")
+}
+
+.shop-item-sticker-cost {
+	position: absolute;
+	bottom: 90px;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.shop-item-sticker-cost span{
+	font-size: 45px;
+}
+
+.information-point-icon {
+	position: absolute;
+	width: 52px;
+	height: 50px;
+	background-image: url(/img/sprite2.png);
+	background-repeat: no-repeat;
+	left: 10px;
+}
+
+.cream-icon {
+	background-position: -215px -10px;
+}
+
+.list-icon {
+	background-position: -78px -10px;
+}
+
+.cow-icon {
+	background-position: -9px -10px;
+}
+
+.templ-icon {
+	background-position: -147px -10px;
 }
