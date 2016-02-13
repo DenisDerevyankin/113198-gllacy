@@ -321,6 +321,10 @@ body{
 .map {
   min-height: 430px;
   width: 100%;
+  background-image: url("/img/MapImg.png");
+  background-repeat: no-repeat; 
+  background-size: 100% 430px;
+	
 }
 
 .map-contacts {
@@ -329,11 +333,14 @@ body{
   margin-top: 65px;
   width: 300px;
   min-height: 305px;
-	color: #000000;
+  color: #000000;
+  background-color: white;
+  border-radius: 20px;
 }
 
 .main-footer {
 	min-height: 98px;
+	margin-top: 20px;
 }
 
 .footer-social {
