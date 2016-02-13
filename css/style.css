@@ -312,8 +312,22 @@ h2{
 }
 
 .footer-copyright {
-  float: left;
-  width: 200px;
+  float: right;
+  font-size: 12px;
+  padding-top: 37px;
+  position: relative;
+}
+
+.footer-copyright a{
+	color: white;
+}
+
+.footer-copyright p{
+ 	margin: 0px;
+}
+
+.sup{
+    vertical-align: super;
 }
 
 .information-point {
@@ -357,9 +371,6 @@ h2{
   margin-bottom: 30px;
 }
 
-.catalog-shop {
- 
-}
 
 .filters-top {
   float: left;
@@ -401,12 +412,6 @@ h2{
   margin-right: 0px;
 }
 
-.shop-navigation {
-}
-
-.information-right {
-	
-}
 
 .user-action-search {
   width: 34px;
@@ -503,7 +508,7 @@ h2{
 }
 
 .social-btn-vk {
-	background-position: -283px -7px;
+	background-position: -282.5px -7px;
 }
 
 .footer-links-left {
@@ -519,4 +524,13 @@ h2{
 .footer-links-right {
 	float: left;
 	width: 178px;
+}
+
+.htmlimg {
+	position: absolute;
+	background-image: url("/img/LogoHTMLAC.svg");
+	top: 0;
+	height: 0;
+	width: 106px;
+	height: 36px;
 }
