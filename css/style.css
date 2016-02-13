@@ -22,7 +22,7 @@ body{
 /*Если подключать через css*/
 .index-logo {
 	float: left;
-	background-image: url("/img/LogoGllacy.svg");
+	background-image: url("../img/LogoGllacy.svg");
 	background-repeat: no-repeat;
 	width: 154px;
 	height: 64px;
@@ -84,15 +84,17 @@ body{
 }
 
 .main-navigation-sub {
+    overflow: hidden;
 	background-color: white;
 	position: absolute;
-	z-index: 10px;
+	z-index: 10;
 	top: 60px;
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
 	border-radius: 10px;
 	display: none;
+    width: 145px; 
 }
 
 .main-navigation > ul > li:first-child:hover .main-navigation-sub{
@@ -100,11 +102,15 @@ body{
 }
 
 .main-navigation-sub a{
-	
+    display: block;
+    padding-top: 7px;
+	padding-left: 22px;
+	padding-bottom: 5px;
 	font-size: 14px;
 	color: black;
 	text-decoration: none;
-	
+	margin: 0px;
+    vertical-align: middle;
 }
 
 .main-navigation-sub li:first-child a{
@@ -113,16 +119,6 @@ body{
 } 
 
 .main-navigation-sub li{
-	display: block;
-	padding-left: 22px;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	width: 143px;
-}
-
-.main-navigation-sub li:first-child{
-	font-size: 14px;
-	color: black;
 }
 
 .main-navigation-sub li:first-child:hover{
@@ -138,13 +134,9 @@ body{
 	background-color: #f6b5a5;
 }
 
-.main-navigation-sub li:last-child{
-	border-radius: 10px;
-}
 
 .user-action {
   float: right;
-  width: 264px;
 }
 
 .user-action ul{
@@ -156,8 +148,7 @@ body{
 
 .user-action li{
   display: inline-block;
-  padding-top: 16px;
-  padding-bottom: 10px;
+  margin-top: 16px;
   vertical-align: top;
   margin-right: 9px;
   
@@ -170,8 +161,6 @@ body{
 .user-action a{
   display: block;
   background-color: #a8bdb1;
-  padding-bottom: 10px;
-  padding-top: 10px;
   font-size: 14px;
   text-decoration: none;
   color: white;
@@ -179,7 +168,11 @@ body{
 }
 
 .container {
-  margin: 0 auto;
+	/*
+  min-width: 860px;
+  max-width: 1200px;*/
+  margin-right: auto;
+  margin-left: auto;
   width: 860px;
 }
 
@@ -221,7 +214,7 @@ body{
   float:left;
   width: 400px;
   margin-right: 20px;
-  background-image: url("/img/BkgrRaspberries.png") /*no-repeat 420px 229px*/;
+  background-image: url("../img/BkgrRaspberries.png") ;
   background-repeat: no-repeat;
   background-size: 420px 230px;
   border-radius: 17px;
@@ -238,7 +231,7 @@ body{
 .gratis-chocolate {
   float:left;
   width: 400px;
-  background-image: url("/img/BkgrChocolate.png") /*no-repeat 420px 229px*/;
+  background-image: url("../img/BkgrChocolate.png") /*no-repeat 420px 229px*/;
   background-repeat: no-repeat;
   background-size: 420px 230px;
   border-radius: 17px;
@@ -273,7 +266,7 @@ body{
 .information {
   margin-bottom: 38px;
   color: #000000;
-  background-image: url("/img/PatternWafer.jpg");
+  background-image: url("../img/PatternWafer.jpg");
   border-radius: 20px;
 	height: 375px;/*Исправить на мин*/
 }
@@ -309,7 +302,7 @@ body{
   height: 100%;
   width: 420px;
   margin-right: 20px;
-  background-image: url("/img/BkgrRaspberries.png") no-repeat 420px 220px;
+  background-image: url("../img/BkgrRaspberries.png") no-repeat 420px 220px;
 }
 
 .dump-subscription {
@@ -321,7 +314,7 @@ body{
 .map {
   min-height: 430px;
   width: 100%;
-  background-image: url("/img/MapImg.png");
+  background-image: url("../img/MapImg.png");
   background-repeat: no-repeat; 
   background-size: 100% 430px;
 	
@@ -473,22 +466,68 @@ body{
 
 .user-action-search {
   width: 34px;
-  border-radius: 17px;
-  text-indent: -10000px;
+  height: 34px;
+  border-radius: 50%;
   position: relative;
+}
+
+.user-action-search::before{
+  content: "";
+  
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  
+  width: 17px;
+  height: 17px;
+  
+  background-image: url("../img/IconSearch.png");
+  background-repeat: no-repeat;
 }
 
 .user-action-login {
   position: relative;
   border-radius: 25px;
-  padding-left: 46px;
-  padding-right: 17px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 45px;
+  padding-right: 18px;
 }
+
+.user-action-login::before{
+  content: "";
+  
+  position: absolute;
+  top: 7px;
+  left: 17px;
+  
+  width: 24px;
+  height: 24px;
+  
+  background-image: url("../img/IconEnter.png");
+  background-repeat: no-repeat;
+  
+}
+
+
 .user-action-cart {
-  padding-left: 46px;
-  border-radius: 25px;
-  padding-right: 30px;
+  border-radius: 18px;
   position: relative;
+  padding: 6px 41px;
+}
+
+.user-action-cart::before{
+  content: "";
+  
+  position: absolute;
+  top: 7px;
+  left: 14px;
+  
+  width: 24px;
+  height: 24px;
+  
+  background-image: url("../img/IconCart.svg");
+  background-repeat: no-repeat;
 }
 
 .intelligence-servicetime {
@@ -502,10 +541,10 @@ body{
 
 /*Для спрайта*/
 .sprite {
-    background-image: url("/img/sprite.png");
+    position: absolute;
+    background-image: url("../img/sprite.png");
     background-repeat: no-repeat;
     display: block;
-	position: absolute;
 }
 
 .sprite-IconCart {
@@ -525,11 +564,11 @@ body{
 }
 
 .sprite-IconSearch {
-    width: 17px;
-    height: 17px;
-    background-position: -196px -10px;
-	top: 10px;
-	left: 10px;
+    top: 7px;
+    left: 7px;
+    background-position: -195px -9px;
+    width: 22px;
+    height: 22px;
 }
 
 .sprite-iconLove {
@@ -550,7 +589,7 @@ body{
 	background-color: #c2cec7;
 	border-radius: 20px;
 	
-	background-image: url("/img/sprite.png");
+	background-image: url("../img/sprite.png");
 }
 
 .social-btn-twit {
@@ -586,7 +625,7 @@ body{
 
 .htmlimg {
 	position: absolute;
-	background-image: url("/img/LogoHTMLAC.svg");
+	background-image: url("../img/LogoHTMLAC.svg");
 	top: 0;
 	height: 0;
 	width: 106px;
@@ -615,7 +654,7 @@ body{
 	position: absolute;
 	width: 61px;
 	height: 61px;
-	background-image: url("/img/IconHit.png")
+	background-image: url("../img/IconHit.png")
 }
 
 .shop-item-sticker-cost {
@@ -633,7 +672,7 @@ body{
 	position: absolute;
 	width: 52px;
 	height: 50px;
-	background-image: url(/img/sprite2.png);
+	background-image: url("../img/sprite2.png");
 	background-repeat: no-repeat;
 	left: 10px;
 }
@@ -652,4 +691,19 @@ body{
 
 .templ-icon {
 	background-position: -147px -10px;
+}
+
+.navigation-sub-new {
+  font-weight: bold;
+  margin: 0;
+  padding-left: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: black;
+}
+
+.sub-menu-line {
+  margin-right: 10px;
+  margin-left: 10px;
 }
