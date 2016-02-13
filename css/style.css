@@ -41,44 +41,84 @@ h2{
 
 .main-navigation {
   float: left;
-  margin-right: 67px;
 }
 
-.main-navigation a{
+.main-navigation > ul > li > a{
 	color: white;
 	font-size: 16px;
 	display: block;	
 	
-	height: 33px;
-	border-radius: 10px 10px;
+	border-radius: 30px;
+	padding: 10px 14px;
 }
 
-.main-navigation a:hover{
+.main-navigation > ul > li > a.cheked{
+	text-decoration: none;
+	font-weight: bold;
+	background-color: #d07058;
+}
+
+.main-navigation > ul > li:hover > a{
 	background-color:white;
 	color:black;
 	text-decoration: none;
+	font-weight: bold;
 }
 
-.main-navigation li:last-child {
+.main-navigation > ul > li:last-child {
 	padding-right: 0px;
 }
 
 
-.main-navigation ul{
+.main-navigation > ul{
 	padding: 0;
 	margin: 0;
 	list-style: none;
 	font-size: 0;
 }
 
-.main-navigation li{
+.main-navigation > ul > li{
 	display: inline-block;
 	line-height: 20px;
-	padding-right: 28px;
-	padding-top: 21px;
-	padding-bottom: 21px;
-	
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
+
+.main-navigation > ul > li{
+	position: relative;
+}
+
+.main-navigation-sub {
+	background-color: white;
+	position: absolute;
+	z-index: 10px;
+	top: 60px;
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	border-radius: 15px;
+	display: none;
+}
+
+.main-navigation > ul > li:first-child:hover .main-navigation-sub{
+	display: block;
+}
+
+.main-navigation-sub a{
+	display: block;
+	font-size: 14px;
+	color: black;
+	text-decoration: none;
+	padding-left: 22px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	width: 143px;
+}
+
+.main-navigation-sub li:first-child a{
+	padding-bottom: 16px; 
+	padding-top: 13px;
+} 
 
 .user-action {
   float: right;
@@ -362,3 +402,5 @@ h2{
 .intelligence-phone {
   font-size: 22px;
 }
+
+
