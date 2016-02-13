@@ -292,7 +292,6 @@ h2{
 
 .footer-social {
   float: left;
-  margin-right: 20px;
   display: block;
   font-size: 0;
 }
@@ -304,8 +303,12 @@ h2{
 
 .footer-links {
   float: left;
-  width: 420px;
+  margin-left: 70px;
   font-size: 13px;
+}
+
+.footer-links a{
+	color:white;
 }
 
 .footer-copyright {
@@ -467,9 +470,11 @@ h2{
 }
 
 .sprite-iconLove {
-    width: 15px;
-    height: 13px;
-    background-position: -338px -10px;
+	top: 3px;
+	left: 0px;
+    width: 17px;
+    height: 16px;
+    background-position: -336px -9px;
 }
 
 .social-btn {
@@ -499,4 +504,19 @@ h2{
 
 .social-btn-vk {
 	background-position: -283px -7px;
+}
+
+.footer-links-left {
+	position: relative;
+	float: left;
+	padding-left: 23px;
+	width: 115px;
+	margin-right: 30px;
+}
+
+
+
+.footer-links-right {
+	float: left;
+	width: 178px;
 }
