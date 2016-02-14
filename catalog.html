@@ -25,10 +25,10 @@
 				<nav class="main-navigation">
 					<ul>
 						<li>
-							<a href="catalog.html">Каталог</a>
+							<a class="cheked" href="catalog.html">Каталог</a>
 							<ul class="main-navigation-sub">
                               <li><h2 class="navigation-sub-new">Новинки</h2><hr class="sub-menu-line"></li>
-								<li><a href="#">Сливочное</a></li>
+								<li><a href="#"href="#">Сливочное</a></li>
 								<li><a href="#">Щербеты</a></li>
 								<li><a href="#">Фруктовый лёд</a></li>
 								<li><a href="#">Мелорин</a></li>
@@ -71,7 +71,7 @@
 			<ul class="breacrumbs">
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="#">Каталог</a></li>
-				<li class="breacrumbs-checked"><a href="#">Сливочное</a></li>
+				<li class="breacrumbs-checked"><span>Сливочное</span></li>
 			</ul>
 			
             <!-- Контакты и время работы -->
@@ -195,12 +195,13 @@
 			<!-- Навигация по страница товара -->
 			<div class="shop-navigation">
 				<ul>
-					<li><span class="shop-navigation-checked">1</span></li>
-					<li><a href="">2</a></li>
-					<li><a href="">3</a></li>
-					<li><a href="">4</a></li>
-					<li><a href="">5</a></li>
-					<li><a href="">&gt;</a></li>
+					<li><i class="lnk-shop">&#60;</i><li>
+					<li><span class="shop-nav-checked lnk-shop">1</span></li>
+					<li><a class="lnk-shop" href="">2</a></li>
+					<li><a class="lnk-shop" href="">3</a></li>
+					<li><a class="lnk-shop" href="">4</a></li>
+					<li><a class="lnk-shop" href="">5</a></li>
+					<li><a class="lnk-shop" href="">&#62;</a></li>
 				</ul>
 			</div>
 		</main>
@@ -212,15 +213,15 @@
 				
 				<section class="footer-social">
 					
-					<a class="social-btn" href="#"><span class="icon-twitter"></span></a>
-					<a class="social-btn" href="#"><span class="icon-instagram"></span></a>
-					<a class="social-btn" href="#"><span class="icon-facebook"></span></a>
-					<a class="social-btn" href="#"><span class="icon-vkontakte"></span></a>  
+					<a class="social-btn icon-twitter" href="#"></a>
+					<a class="social-btn icon-instagram" href="#"></a>
+					<a class="social-btn icon-facebook" href="#"></a>
+					<a class="social-btn icon-vkontakte" href="#"></a>  
 				</section>
 			
 				<section class="footer-links">
 					<div class="footer-links-left">
-						<div class="sprite sprite-iconLove"></div>
+						<i class="icon-Love"></i>
 						<a href="#">Для поставщиков</a>
 						<a href="#">О производстве</a>
 					</div>

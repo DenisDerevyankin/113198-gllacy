@@ -165,11 +165,11 @@ body{
 }
 
 .container {
-  min-width: 900px;
-  max-width: 1200px; 
+  /*min-width: 900px;
+  max-width: 1200px; */
+  width: 860px;
   margin-right: auto;
   margin-left: auto;
-  
 }
 
 .intelligence {
@@ -204,10 +204,13 @@ body{
   clear: both;
   min-height: 105px;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .gratis-raspberry {
-
+  float: left;
+  width: 400px;
+  margin-right: 20px;
   background-image: url("../img/BkgrRaspberries.png") ;
   background-repeat: no-repeat;
   background-size: 100% 230px;
@@ -222,7 +225,19 @@ body{
   margin-bottom: 40px;
 }
 
+.gratis a:hover, .map-contacts a:hover, .btn-buy:hover{
+	background-color: #f17b64;
+	box-shadow: inset 0 -2px 0 0 #ac1000;
+}
+
+.gratis a:active, .map-contacts a:active, .btn-buy:active{
+	background-color: #d94a34;
+	box-shadow: inset 0 2px 0 0 #ac1000;
+}
+
 .gratis-chocolate {
+  float: right;
+  width: 400px;
   background-image: url("../img/BkgrChocolate.png") /*no-repeat 420px 229px*/;
   background-repeat: no-repeat;
   background-size: 100% 230px;
@@ -240,9 +255,8 @@ body{
 .shop-item {
   position: relative;
   float: left;
-  width: 46%;
+  width: 200px;
   margin-right: 20px;
-
   text-align: center;
   min-height: 282px;
 }
@@ -251,6 +265,10 @@ body{
 	width: 100%;
 	color: white;
 	font-size: 16px;
+}
+
+.shop-item:hover a{
+	color: #ef7762;
 }
 
 .shop-item:last-child {
@@ -294,34 +312,43 @@ body{
 
 .dump-news {
   float: left;
-  width: 100%;
+  width: 400px;
   background-image: url("../img/BkgrStrawberry.png"); 
   background-repeat: no-repeat;
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-bottom: 82px;
+  padding-top: 22px;
+  padding-left: 18px;
+  padding-bottom: 90px;
   background-size: cover;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+
+.dump-news h3{
+	margin: 0;
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 16px;
 }
 
 .dump-subscription {
-  float: left;
-  width: 100%;
+  float: right;
+  width: 366px;
+  background-image: url("../img/BkgrPost.png");
+  background-repeat: no-repeat;
   background-color: #f8f7f4;
-  padding-left: 28px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  border-radius: 20px;
-  font-size: 16px;
-  
-	
-	
+  padding-left: 27px;
+  padding-right: 27px;
+  padding-top: 32px;
+  padding-bottom: 38px;
+  border-radius: 10px;
+  background-position: center;
+  background-size: 419px 221px;
 }
 
 .dump-subscription p{
 	padding: 0;
 	margin: 0;
-	padding-bottom: 22px;
+	padding-bottom: 13px;
+	font-size: 16px;
 }
 
 .map {
@@ -329,28 +356,45 @@ body{
   width: 100%;
   background-image: url("../img/MapImg.png");
   background-repeat: no-repeat; 
-  background-size: 100% 430px;
   background-size: cover;
-	
+  position: relative;
 }
 
 .map-contacts {
+  position: relative;
   float: right;
-  margin-right: 20px;
   margin-top: 65px;
+  padding-top: 10px;
   width: 300px;
-  min-height: 305px;
-	padding-left: 28px;
+  min-height: 299px;
+  padding-left: 28px;
   color: #000000;
   background-color: white;
   border-radius: 20px;
 }
 
+.map-contacts p{
+	margin: 0;
+	margin-top: 20px;
+
+	font-size: 14px;
+}
+
+.map-contacts i{
+	display: block;
+	margin-top: -10px;
+	font-style: normal;
+	font-size: 14px;
+	
+}
+
 .map-contacts strong{
 	font-size: 18px;
 	font-weight: bold;
-	margin: 0px;
+	display: block;
+	margin-bottom: 10px;
 }
+
 
 .main-footer {
 	min-height: 98px;
@@ -361,7 +405,6 @@ body{
   float: left;
   display: block;
   font-size: 0px;
-  margin-left: 20px;
 }
 
 .footer-social a:last-child{
@@ -372,7 +415,7 @@ body{
 .footer-links {
   float: left;
   font-size: 13px;
-	margin-left: 10%;
+  margin-left: 70px;
 }
 
 .footer-links a{
@@ -425,11 +468,12 @@ body{
   margin-top: 22px;
 }
 
-.breacrumbs a{
+.breacrumbs a, .breacrumbs span {
   font-size: 14px;
   margin-right: 22px;
   color: white;
 }
+
 
 
 .del-lineheight {
@@ -478,7 +522,17 @@ body{
   width: 200px;
   min-height: 300px;
   margin-right: 20px;
-  
+  text-align: center;
+}
+
+.catalog-shop-item:hover{
+	background-color: #a7b8ad;
+}
+
+.catalog-shop-item a{
+	color: white;
+	font-size: 16px;
+	font-weight: 500;
 }
 
 .catalog-shop-item:nth-child(4n){
@@ -493,23 +547,32 @@ body{
   position: relative;
 }
 
-.user-action-search:hover {
-	background-color: white;
-	background-image: black url("../img/IconEnter.png");
+.user-action-search span{
+	position: absolute;
+	top: 5px;
+	left: 7px;
 }
 
 .user-action-search::before{
   content: "";
   
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: 7px;
+  left: 9px;
   
-  width: 17px;
-  height: 17px;
+  width: 24px;
+  height: 24px;
   
   background-image: url("../img/IconSearch.png");
   background-repeat: no-repeat;
+}
+
+.user-action-search:hover {
+	background-color: white;
+}
+
+.user-action-search:hover::before{
+	background-image: url("../img/IconSearchBlack.png");
 }
 
 .user-action-login {
@@ -533,7 +596,15 @@ body{
   
   background-image: url("../img/IconEnter.png");
   background-repeat: no-repeat;
-  
+}
+
+.user-action-login:hover{
+	background-color: white;
+	color: black;
+}
+
+.user-action-login:hover::before{
+	background-image: url("../img/IconEnterBlack.png");
 }
 
 
@@ -553,9 +624,19 @@ body{
   width: 24px;
   height: 24px;
   
-  background-image: url("../img/IconCart.svg");
+  background-image: url("../img/IconCart.png");
   background-repeat: no-repeat;
 }
+
+.user-action-cart:hover{
+	background-color: white;
+	color: black;
+}
+
+.user-action-cart:hover::before{
+	background-image: url("../img/IconCartBlack.png");
+}
+
 
 .intelligence-servicetime {
   font-size: 14px;
@@ -619,6 +700,15 @@ body{
 	border: 3px solid #c2cec7;
 }
 
+.social-btn:hover{
+	opacity: 1;
+}
+
+.social-btn:active{
+	box-shadow: inset 0 2px 4px 0 #9b9b9b;
+	opacity: 0.9;
+}
+
 .social-btn span{
 	color: #849d8f;
 	font-size: 16px;
@@ -628,21 +718,6 @@ body{
 	border-radius: 0%;
 }
 
-.social-btn-twit {
-}
-
-.social-btn-inst {
-	background-position: -141px -7px;
-}
-
-.social-btn-fd {
-	background-position: -89px -7px;
-}
-
-.social-btn-vk {
-	background-position: -282.5px -7px;
-}
-
 .footer-links-left {
 	position: relative;
 	float: left;
@@ -650,8 +725,6 @@ body{
 	width: 115px;
 	margin-right: 30px;
 }
-
-
 
 .footer-links-right {
 	float: left;
@@ -754,10 +827,7 @@ body{
 	  width: 46%;
 }
 
-.dump-news-head {
-	font-size: 16px;
-	font-weight: normal;
-}
+
 
 .dump-news-link {
 	font-size: 24px;
@@ -765,19 +835,20 @@ body{
 	color: black;
 }
 
-.map-contacts-label {
-	font-size: 14px;
-	margin-bottom: 16px;
-}
+
 
 .map-contacts-btn {
+	position: absolute;
 	font-size: 17px;
 	font-weight: bold;
-	padding: 18px 35px;
+	padding: 14px 35px;
 	border-radius: 28px;
 	background-color: #eb563b;
 	color: white;
 	text-decoration: none;
+	right: 26px;
+	bottom: 30px;
+	
 }
 
 .subscription-btn {
@@ -791,73 +862,127 @@ body{
 
 .subscription-text {
 	height: 44px;
-	width: 365px;
+	width: 227px;
 	border: 1px solid #d3d3d2;
 	border-radius: 10px;
 }
 
 
-/*Подключение иконочных шрифтов*/
-@font-face {
-  font-family: 'fontello';
-  src: url('../symbol/font/fontello.eot?55494662');
-  src: url('../symbol/font/fontello.eot?55494662#iefix') format('embedded-opentype'),
-       url('../symbol/font/fontello.woff?55494662') format('woff'),
-       url('../symbol/font/fontello.ttf?55494662') format('truetype'),
-       url('../symbol/font/fontello.svg?55494662#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
+
+.btn-buy {
+	position: absolute;
+	width: 281px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	padding-bottom: 23px;
+	padding-top: 23px;
+	border-radius: 30px;
+	background-color: #ed6140;
+	bottom:0;
+	left: 290px;
+	font-size: 31.48px;
+	font-weight: bold;
+	
 }
-/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
-/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
-/*
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg?55494662#fontello') format('svg');
-  }
+
+.icon-twitter {
+	background-image: url("../img/IconTwitter.svg");
+	width: 32px;
+	height: 32px;
+	opacity: 0.8;
 }
-*/
- 
- [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
- 
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
- 
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Font smoothing. That was taken from TWBS */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+
+.icon-instagram {
+	background-image: url("../img/IconInstagram.svg");
+	width: 32px;
+	height: 32px;
+	opacity: 0.8;
 }
- 
-.icon-instagram:before { content: '\e800'; } /* '' */
-.icon-vkontakte:before { content: '\e801';
-	color: #e6ebe9;
-	background-color: #849d8f;
-} /* '' */
-.icon-facebook:before { content: '\e802'; } /* '' */
-.icon-twitter:before { content: '\e803'; } /* '' */
+
+.icon-facebook {
+	background-image: url("../img/IconFacebook.svg");
+	width: 32px;
+	height: 32px;
+	opacity: 0.8;
+}
+
+.icon-vkontakte {
+	background-image: url("../img/IconVK.svg");
+	width: 32px;
+	height: 32px;
+	opacity: 0.8;
+}
+
+.map-pointer {
+	position: absolute;
+	width: 79px;
+	height: 139px;
+	background-image: url("../img/MapPointer.svg");
+	background-repeat: no-repeat;
+	top:50px;
+	left: 300px;
+}
+
+.icon-Love {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	background-image: url("../img/iconLove.svg");
+	background-repeat: no-repeat;
+	top: 4px;
+	left: 4px;
+}
+
+.shop-navigation {
+	margin-top: 50px;
+}
+
+.shop-navigation ul{
+	float: right;
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+.shop-navigation li{
+	display: inline-block;
+}
+
+.shop-navigation a{
+	border-radius: 50%;
+	margin-right: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+.shop-navigation a:hover{
+	background-color: #9db1a5;
+}
+
+.shop-navigation span{
+	border-radius: 50%;
+	margin-right:8px;
+}
+
+.shop-navigation span.shop-nav-checked{
+	background-color: white;
+	color:black;
+}
+
+.shop-navigation i{
+	font-style: normal;
+	margin-right: 5px;
+}
+
+.lnk-shop{
+	display: block;
+	font-size: 16px;
+	font-weight: 500;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	line-height: 1.7;
+}
