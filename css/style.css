@@ -611,7 +611,7 @@ body > input[type="radio"] {
   padding-bottom: 38px;
   border-radius: 10px;
   background-position: center;
-  background-size: 419px 221px;
+  
 }
 
 .dump-subscription p{
@@ -686,6 +686,7 @@ body > input[type="radio"] {
   float: left;
   font-size: 13px;
   margin-left: 70px;
+  line-height: 22px;
 }
 
 .footer-links a{
@@ -757,7 +758,7 @@ body > input[type="radio"] {
 
 .catalog-name {
   margin: 0;
-	margin-bottom: 10px;
+  margin-bottom: 36px;
   font-size: 35px;
   line-height: 30px;
 }
@@ -775,7 +776,7 @@ body > input[type="radio"] {
 .filters-bottom {
   float: left;
   width: 100%;
-  margin-top: 0px;
+  margin-top: 14px;
 }
 
 .filters-top-sort {
@@ -787,6 +788,7 @@ body > input[type="radio"] {
   float: left;
   width: 222px;
   min-height: 60px;
+  margin-right: 10px;
 }
 
 .filters-top-price input{
@@ -801,6 +803,8 @@ body > input[type="radio"] {
 
 .filters-top-fat {
    float: left;
+   width: 417px;
+   position: relative;
 }
 
 .catalog-shop-item {
@@ -1049,7 +1053,7 @@ body > input[type="radio"] {
 	font-weight: bold;
 	color: white;
 	padding: 13px 20px;
-	
+	border: none;
  	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
 
 	background: #f26843;
@@ -1062,9 +1066,11 @@ body > input[type="radio"] {
 
 .subscription-text {
 	height: 44px;
-	width: 227px;
+	width: 207px;
 	border: 1px solid #d3d3d2;
 	border-radius: 10px;
+	color: darkgray;
+	padding-left: 20px;
 }
 
 
@@ -1205,6 +1211,7 @@ body > input[type="radio"] {
 footer hr{
 	color: #a9bbb1;
 }
+
 .filters-top-title {
 	font-size: 14px;
 	font-weight: 500;
@@ -1247,4 +1254,138 @@ footer hr{
 
 .range-toggle-max {
 	left: 130px;
+}
+
+.choose-rdbtns {
+	position: relative;
+	padding: 10px 16px;
+	background-color: #aabab0;
+	border-radius: 20px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.radio-btn {
+	position: relative;
+	padding-left: 30px;
+	margin-right: 12px;
+	cursor: pointer;
+}
+
+
+
+.radio-btn input[type="radio"]{
+	display: none;
+}
+
+.radio-btn input[type="radio"] + .radiobox-indicator{
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	left: 2px;
+	top: -2px;
+	border: 1px solid white;
+}
+
+.radio-btn:hover input[type="radio"] + .radiobox-indicator{
+	top: -3px;
+	left: 1px;
+	border: 2px solid white;
+}
+
+.radio-btn input[type="radio"]:checked + .radiobox-indicator::before{
+	content: "";
+  	position: absolute;
+	
+	width: 13px;
+	height: 13px;
+	
+	border-radius: 50%;
+	background-color: white;
+	
+	top: 4px;
+	left: 4px;
+	
+}
+
+.controls {
+	float: left;
+	padding: 10px 16px;
+	background-color: #aabab0;
+	border-radius: 20px;
+	font-size: 16px;
+	font-weight: 500;
+	margin-right: 10px;
+}
+
+.check-btn{
+	position: relative;
+	padding-left: 30px;
+	margin-right: 12px;
+	cursor: pointer;
+}
+
+.check-btn input[type="checkbox"]{
+	display: none;
+}
+
+.check-btn input[type="checkbox"] + .checkbox-indicator{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	border: 1px solid white;
+	top: -2px;
+	left: 0px;
+}
+
+.check-btn:hover input[type="checkbox"] + .checkbox-indicator{
+	
+	top: -3px;
+	left: -1px;
+	border: 2px solid white;
+}
+
+.check-btn input[type="checkbox"]:checked + .checkbox-indicator::before{
+	content: "";
+  	position: absolute;
+	width: 2px;
+	height: 13px;
+	background-color: white;
+	transform: rotate(45deg);
+	top: 3px;
+	left: 11px;
+}
+
+.check-btn input[type="checkbox"]:checked + .checkbox-indicator::after{
+	content: "";
+  	position: absolute;
+	width: 2px;
+	height: 7px;
+	background-color: white;
+	transform: rotate(-45deg);
+	top: 8px;
+	left: 5px;
+}
+
+.filters-bottom input[type="submit"]
+{
+	padding:  8px 34px;
+	background-color: #9aaea3;
+	border-radius: 20px;
+	border: 2px solid white;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.filters-bottom input[type="submit"]:hover{
+	background-color: white;
+	color: black;
+}
+
+.filters-bottom input[type="submit"]:active{
+	box-shadow: inset 0 1px 5px 0px black;
+	border:none;
+	padding:  9px 35px;
 }
