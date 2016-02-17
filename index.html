@@ -16,7 +16,6 @@
     <input type="radio" id="btn-3" name="toggle">
 		
        <div class="site-wrapper">
-		   <div class="content-wrapper">
 		<!--    Хедер страницы   -->
 		<header class="main-header">
 			  
@@ -29,7 +28,7 @@
 				<nav class="main-navigation">
 					<ul>
 						<li>
-							<a href="#">Каталог</a>
+							<a href="catalog.html">Каталог</a>
 							<ul class="main-navigation-sub">
                               <li><h2 class="navigation-sub-new">Новинки</h2><hr class="sub-menu-line"></li>
 								<li><a href="catalog.html">Сливочное</a></li>
@@ -51,14 +50,15 @@
 				<div class="user-action"> 
 					<ul>
 						<li>
-							<a href="#" class="user-action-search"></a>
+							<a href="#" class="user-action-search">
 							
 								<div class="search-form">
 									<form action="https://echo.htmlacademy.ru" method="post">
 										<input type="text" name="search" value="Что ищем?">
 									</form>
 								</div>
-							
+								
+							</a>
 						</li>
 						<li>              
 							<a href="#" class="user-action-login">Вход</a>
@@ -68,55 +68,85 @@
 									<input type="text" name="mail" value="Электронная почта">
 									<input type="password" name="password" value="Пароль">
 									<input class="login-btn" type="submit" value="Войти">
+									<div class="login-links">
+										<a href="#">Забыли пароль?</a>
+										<a href="#">Новая регестрация</a>
+									</div>
 								</form>
 								
 							</div>
 						</li>
 						<li>
 							<a href="#" class="user-action-cart">Пусто</a>
+							<div class="shop-form">
+								<ul>
+									<li>
+										<i class="item-delete"></i>
+										<i class="item-img cream1"></i>
+										<i class="item-name">Пломбир с апельсиновым джемом</i>
+										<i class="item-weight">1,5кг х 200 руб. </i>
+										<i class="item-price">300 руб. </i>
+									</li>
+									<li>
+										<i class="item-delete"></i>
+										<i class="item-img cream2"></i>
+										<i class="item-name">Клубничный пломбир
+															 с присыпкой из белого шоколада</i>
+										<i class="item-weight">1,5кг х 450 руб. </i>
+										<i class="item-price">450 руб.</i>
+									</li>
+								</ul>
+								<div class="shop-form-line"></div>
+								<b class="shop-form-price">Итого: 750 руб.</b>
+								<a href="#" class="shop-form-btn">Оформить заказ</a>
+							</div>
+							
 						</li>
 					</ul>
 				</div>
 
-			</div>
-			
-		</header>  
 		
-	    <!-- Контакты и время работы -->
-		<div class="container clearfix">
+			
+			<!-- Контакты и время работы -->
+		
 			<div class="intelligence">
 				<p><b class="intelligence-servicetime">С 10 до 20 ежедневно</b><br>
 				<b class="intelligence-phone">8 812 450-25-25</b></p>
 			</div> 
-		</div>	   
-			   
-			   
-		<!--  Слайдер  -->	   
-		<div class="slider">
-			
-			<div class="slide" id="slide1">
-            	<div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
-            	<a class="slide-btn" href="#">Давайте оба!</a>
-          	</div>
-			
-			<div class="slide" id="slide2">
-            	<div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
-            	<a class="slide-btn" href="#">Давайте оба!</a>
-          	</div>
-			
-          	<div class="slide" id="slide3">
-				<div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
-            	<a class="slide-btn" href="#">Давайте оба!</a>
+				
 			</div>
+		</header>  
+		
+	    
+ 
+			   
+		<div class="container clearfix">	   
+			<!--  Слайдер  -->	   
+			<div class="slider">
 			
-			<div class="slider-controls">
-            	<label for="btn-1"></label>
-            	<label for="btn-2"></label>
-            	<label for="btn-3"></label>
-			</div>
+				<div class="slide" id="slide1">
+					<div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+					<a class="slide-btn" href="#">Давайте оба!</a>
+				</div>
+			
+				<div class="slide" id="slide2">
+					<div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+					<a class="slide-btn" href="#">Давайте оба!</a>
+				</div>
+			
+				<div class="slide" id="slide3">
+					<div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+					<a class="slide-btn" href="#">Давайте оба!</a>
+				</div>
+			
+				<div class="slider-controls">
+					<label for="btn-1"></label>
+					<label for="btn-2"></label>
+					<label for="btn-3"></label>
+				</div>
 			
 		</div>			 
-			   
+		</div>  
 		<main>
           
 			<div class="container clearfix">
@@ -261,7 +291,6 @@
 			<div class="container clearfix">
 				
 				<section class="footer-social">
-					
 					<a class="social-btn icon-twitter" href="#"></a>
 					<a class="social-btn icon-instagram" href="#"></a>
 					<a class="social-btn icon-facebook" href="#"></a>
@@ -289,8 +318,22 @@
 			
 		</footer>
 			   
-	    </div> <!--content-wrapper -->
 	  </div>  <!--site-wrapper-->
+	
+
+	<div class="modal-content">
+		<h2>Мы обязательно вам ответим!</h2>
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<form action="https://echo.htmlacademy.ru" method="post">
+			<input class="user-name" type="text" name="mail" value="Как вас зовут?">
+			<input class="user-mail" type="text" name="mail" value="Ваша почта для ответа?">
+			<input class="user-text" type="text" name="mail" value="Напишите что-нибудь...">
+      		<input class="send-btn" type="submit" value="Отправить">
+		</form>
+	</div> 
+	
+	<div class="modal-overlay"></div>	
+		
    </body>
 	
 </html>
