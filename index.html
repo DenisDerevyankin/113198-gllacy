@@ -50,7 +50,7 @@
 				<div class="user-action"> 
 					<ul>
 						<li>
-							<a href="#" class="user-action-search">
+							<a href="#" class="user-action-search"></a>
 							
 								<div class="search-form">
 									<form action="https://echo.htmlacademy.ru" method="post">
@@ -58,7 +58,6 @@
 									</form>
 								</div>
 								
-							</a>
 						</li>
 						<li>              
 							<a href="#" class="user-action-login">Вход</a>
@@ -118,8 +117,6 @@
 		</header>  
 		
 	    
- 
-			   
 		<div class="container clearfix">	   
 			<!--  Слайдер  -->	   
 			<div class="slider">
@@ -171,20 +168,26 @@
 						</article>
 					
 				</div>
+				
 				<!-- Выбор мороженого -->
 				<div class="shop clearfix">
 			
-				
 					<article class="shop-item">
+						<div class="item-hover">
+							<a class="item-btn" href="#">Быстрый просмотр</a>
+						</div>
 						<div class="shop-item-sticker-hit"></div>
-						<a href="#"><img class="shop-item-pic" src="img/ContentCream1.png" width="100%" height="100%" alt=""></a>
+						<a href="#"><img class="shop-item-pic" src="img/ContentCream1.png" width="200" height="200" alt=""></a>
 						<div class="shop-item-sticker-cost"><span>310 Р</span>/кг</div>
 						<a class="shop-item-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
 					</article>
 				
 					<article class="shop-item">
+						<div class="item-hover">
+							<a class="item-btn" href="#">Быстрый просмотр</a>
+						</div>
 						<div class="shop-item-sticker-hit"></div>
-						<a href="#"><img class="shop-item-pic" src="img/ContentCream2.png" width="100%" height="100%" alt=""></a>
+						<a href="#"><img class="shop-item-pic" src="img/ContentCream2.png" width="200" height="200" alt=""></a>
 						<div class="shop-item-sticker-cost"><span>380 Р</span>/кг</div>
 						<a class="shop-item-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
 					</article>
@@ -192,15 +195,21 @@
 					
 					
 						<article class="shop-item">
+							<div class="item-hover">
+								<a class="item-btn" href="#">Быстрый 	просмотр</a>
+							</div>
 							<div class="shop-item-sticker-hit"></div>
-							<a href="#"><img class="shop-item-pic" src="img/ContentCream3.png" width="100%" height="100%" alt=""></a>
+							<a href="#"><img class="shop-item-pic" src="img/ContentCream3.png" width="200" height="200" alt=""></a>
 							<div class="shop-item-sticker-cost"><span>355 Р</span>/кг</div>
 							<a class="shop-item-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 						</article>
 				
 						<article class="shop-item">
+							<div class="item-hover">
+								<a class="item-btn" href="#">Быстрый 	просмотр</a>
+							</div>
 							<div class="shop-item-sticker-hit"></div>
-							<a href="#"><img class="shop-item-pic" src="img/ContentCream4.png" width="100%" height="100%" alt=""></a>
+							<a href="#"><img class="shop-item-pic" src="img/ContentCream4.png" width="200" height="200" alt=""></a>
 							<div class="shop-item-sticker-cost"><span>415 Р</span>/кг</div>
 							<a class="shop-item-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 						</article>
@@ -325,14 +334,45 @@
 		<h2>Мы обязательно вам ответим!</h2>
 		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 		<form action="https://echo.htmlacademy.ru" method="post">
-			<input class="user-name" type="text" name="mail" value="Как вас зовут?">
-			<input class="user-mail" type="text" name="mail" value="Ваша почта для ответа?">
-			<input class="user-text" type="text" name="mail" value="Напишите что-нибудь...">
-      		<input class="send-btn" type="submit" value="Отправить">
+			<div class="modal-point">
+				<input class="user-name" type="text" name="user-name" value="Как вас зовут?"/>
+				<label for="user-name">Как вас зовут?</label>
+			</div>
+			<div class="modal-point">
+				<input class="user-mail" type="text" name="user-mail" value="Ваша почта для ответа?"/>
+				<label for="user-mail">Ваша почта для ответа?</label>
+			</div>
+			<div class="modal-point">
+				<input class="user-text" type="text" name="user-text" value="Напишите что-нибудь..."/>
+				<label for="user-text">Напишите что-нибудь...</label>
+			</div>
+      		<input class="send-btn" type="submit" value="Отправить"/>
 		</form>
 	</div> 
 	
 	<div class="modal-overlay"></div>	
+	
+	<script>
+		var link = document.querySelector(".map-contacts-btn");
+		var popap = document.querySelector(".modal-content");
+		var overlay =document.querySelector(".modal-overlay");
+		link.addEventListener("click", function(event) {
+		event.preventDefault();
+		popap.classList.add("modal-content-show");
+		overlay.classList.add("modal-content-show");
+		});
+	</script>
+	
+	<script>
+		var link = document.querySelector(".modal-content-close");
+		var popap = document.querySelector(".modal-content");
+		var overlay =document.querySelector(".modal-overlay");
+		link.addEventListener("click", function(event) {
+		event.preventDefault();
+		popap.classList.remove("modal-content-show");
+		overlay.classList.remove("modal-content-show");
+		});
+	</script>
 		
    </body>
 	
