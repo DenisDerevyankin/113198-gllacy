@@ -441,8 +441,8 @@ body > input[type="radio"] {
 	background-color: #f8f7f4;
 	border-radius: 10px;
 	padding: 15px 18px;
-	top: 55px;
-	right: 230px;
+	top: 60px;
+	right: 210px;
 	display: none;
 }
 
@@ -481,8 +481,8 @@ body > input[type="radio"] {
 	border-radius: 10px;
 	width: 244px;
 	padding: 15px 18px;
-	top:55px;
-	right: 130px;
+	top:60px;
+	right: 100px;
 	display: none;
 }
 
@@ -519,8 +519,8 @@ body > input[type="radio"] {
 	background-color: #f8f7f4;
 	border-radius: 10px;
 	width: 540px;
-	right: 0px;
-	top: 54px;
+	right: -30px;
+	top: 60px;
 	padding-top: 12px;
 	padding-bottom: 20px;
 	display: none;
