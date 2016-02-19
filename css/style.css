@@ -14,6 +14,8 @@ body{
   padding-left: 2.3%;
   padding-right: 2.3%;
   position: relative;
+	outline: 2px solid black;
+	box-sizing: border-box;
 }
 
 .site-wrapper{
@@ -32,8 +34,7 @@ body{
 
 .slider {
   position: relative;
-
-  padding-top: 270px;
+  padding-top: 275px;
   padding-bottom: 40px;
   text-align: center;
   color: #ffffff;
@@ -43,14 +44,14 @@ body{
   width: 700px;
   margin: 0 auto;
   margin-bottom: 30px;
-
+  line-height: 60.35px;
   font-weight: 800;
   font-size: 60px;
 }
 
 .slide-btn {
   display: inline-block;
-  padding: 12px 50px;
+  padding: 12px 44px;
 
   font-weight: 600;
   font-size: 31px;
@@ -98,8 +99,8 @@ body{
 
 .slider-controls {
   position: absolute;
-  bottom: 25px;
-  left: 0;
+  bottom: 65px;
+  left: -20px;
   z-index: 20;
 
   font-size: 0;
@@ -174,12 +175,15 @@ body > input[type="radio"] {
 	background-repeat: no-repeat;
 	width: 154px;
 	height: 64px;
-	margin-left: -6px;
-	margin-right: 25px;
+	margin-left: -27px;
+	margin-right: 15px;
+	margin-top: 10px;
 }
 
 .main-navigation {
   float: left;
+	margin-top: 5px;
+	margin-right: 42px;
 }
 
 .main-navigation > ul > li > a{
@@ -286,7 +290,8 @@ body > input[type="radio"] {
 
 .user-action {
   float: right;
-	position: relative;
+  position: relative;
+  margin-right: 0px;
 }
 
 .user-action ul{
@@ -298,14 +303,14 @@ body > input[type="radio"] {
 
 .user-action li{
   display: inline-block;
-  margin-top: 16px;
-  vertical-align: top;
+  margin-top: 22px;
+  vertical-align: bottom;
   margin-right: 9px;
   
 }
 
 .user-action ul li:last-child{
-  margin-right: 0px;
+  margin-right: -26px;
 }
 
 .user-action li > a {
@@ -640,7 +645,8 @@ body > input[type="radio"] {
   width: 170px;
   text-align: right;
   padding: 0px;
-  margin-top: 20px;
+  margin-top: 13px;
+  margin-right: -20px;
 }
 
 .intelligence p{
@@ -673,8 +679,8 @@ body > input[type="radio"] {
 
 .gratis-raspberry {
   float: left;
-  width: 46.6%;
-  margin-right: 2.2%;
+  width: 48.85%;
+  margin-right: 2.3%;
   background-image: url("../img/BkgrRaspberries.png") ;
   background-repeat: no-repeat;
   background-size: cover;
@@ -682,17 +688,21 @@ body > input[type="radio"] {
   padding-left: 20px;
   font-weight: bold;
   font-size: 18px;
+  box-sizing: border-box;
 
 }
 
 .gratis {
-  width: 100%;
   margin-bottom: 40px;
   line-height: 22px;
+  width: 860px;
+	margin-left: -23px;
 }
 
 .gratis h2{
 	font-size: 35px;
+	margin-top: 26px;
+	margin-bottom: 23px;
 }
 .gratis-btn:hover, .map-contacts a:hover, .subscription-btn:hover, .login-form input.login-btn:hover, .shop-form-btn:hover, .modal-content input.send-btn:hover, .item-btn:hover {
  background:    -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
@@ -710,19 +720,22 @@ body > input[type="radio"] {
 
 .gratis-chocolate {
   float: right;
-  width: 46.6%;
-  background-image: url("../img/BkgrChocolate.png") /*no-repeat 420px 229px*/;
+  width: 48.85%;
+  background-image: url("../img/BkgrChocolate.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 17px;
   padding-left: 20px;
   font-weight: bold;
   font-size: 18px;
+  box-sizing: border-box;
 }
 
 .shop {
   margin-bottom: 35px;
   margin-top: 40px;
+	width: 860px;
+  margin-left: -20px;
 }
 
 .shop-item {
@@ -754,6 +767,9 @@ body > input[type="radio"] {
   border-radius: 20px;
   min-height: 375px;
   line-height: 22px;
+	box-sizing: border-box;
+	width: 860px;
+	margin-left: -20px;
 }
 
 .information-head {
@@ -770,12 +786,14 @@ body > input[type="radio"] {
   margin-bottom: 40px;
   color: #000000;
   line-height: 22px;
+	width: 860px;
+	margin-left: -20px;
 }
 
 .dump-news {
   float: left;
-  width: 47.9%;
-  margin-right: 2.2%;
+  width: 48.85%;
+  margin-right: 2.3%;
   background-image: url("../img/BkgrStrawberry.png"); 
   background-repeat: no-repeat;
   padding-top: 22px;
@@ -784,7 +802,7 @@ body > input[type="radio"] {
   background-size: cover;
   border-radius: 10px;
   min-height: 22px;
-
+  box-sizing: border-box;
 }
 
 .dump-news h3{
@@ -796,13 +814,13 @@ body > input[type="radio"] {
 
 .dump-subscription {
   float: right;
-  width: 47.9%;
+   width: 48.85%;
   background-image: url("../img/BkgrPost.png");
   background-repeat: no-repeat;
   box-sizing: border-box;
   padding-left: 26px;
   padding-right: 27px;
-  padding-top: 32px;
+  padding-top: 35px;
   padding-bottom: 38px;
   border-radius: 10px;
   background-position: center;
@@ -817,9 +835,6 @@ body > input[type="radio"] {
 
 .map {
   min-height: 430px;
-  width: 100%;
-  background-repeat: no-repeat; 
-  background-size: cover;
   position: relative;
 }
 
@@ -829,7 +844,7 @@ body > input[type="radio"] {
   position: absolute;
   float: right;
   margin-top: 65px;
-  padding-top: 10px;
+  padding-top: 5px;
   width: 300px;
   min-height: 299px;
   padding-left: 28px;
@@ -837,7 +852,8 @@ body > input[type="radio"] {
   background-color: white;
   border-radius: 20px;
   line-height: 22px;
-	right: 2.3%;
+  right: 2.3%;
+  box-sizing: border-box;
 }
 
 .map-contacts p{
@@ -872,6 +888,7 @@ body > input[type="radio"] {
   float: left;
   display: block;
   font-size: 0px;
+	margin-left: -20px;
 }
 
 .footer-social a:last-child{
@@ -882,8 +899,9 @@ body > input[type="radio"] {
 .footer-links {
   float: left;
   font-size: 13px;
-  margin-left: 70px;
+  margin-left: 60px;
   line-height: 22px;
+	margin-top: -5px;
 }
 
 .footer-links a{
@@ -895,6 +913,7 @@ body > input[type="radio"] {
   font-size: 12px;
   padding-top: 37px;
   position: relative;
+
 }
 
 .footer-copyright a{
@@ -965,6 +984,8 @@ body > input[type="radio"] {
 
 .filters {
   margin-bottom: 30px;
+	width: 860px;
+	margin-left: -20px;
 }
 
 
@@ -1159,14 +1180,15 @@ body > input[type="radio"] {
 	width: 168px;
 	right: 0px;
 	bottom: 0px;
-	margin-top: 5px;
+	box-sizing: border-box;
 	margin-right: 20px;
 	margin-bottom: 24px;
 	color: white;
 	text-decoration: none;
 	text-align: center;
-	padding-bottom: 14px;
-	padding-top: 14px;
+	font-size: 18px;
+	padding-bottom: 13px;
+	padding-top: 13px;
 	background: #f26843;
 	background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
 	background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
@@ -1185,7 +1207,8 @@ body > input[type="radio"] {
 
 .shop-item-sticker-cost {
 	position: absolute;
-	bottom: 110px;
+	bottom: 100px;
+	left: -7px;
 	font-weight: bold;
 	font-size: 30px;
 	cursor: pointer;
@@ -1288,7 +1311,7 @@ body > input[type="radio"] {
 	background-color: #eb563b;
 	color: white;
 	text-decoration: none;
-	right: 40px;
+	right: 20px;
 	bottom: 30px;
 	
 }
