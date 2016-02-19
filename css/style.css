@@ -859,7 +859,7 @@ body > input[type="radio"] {
 	font-size: 18px;
 	font-weight: bold;
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 
@@ -1288,7 +1288,7 @@ body > input[type="radio"] {
 	background-color: #eb563b;
 	color: white;
 	text-decoration: none;
-	right: 26px;
+	right: 40px;
 	bottom: 30px;
 	
 }
@@ -1680,7 +1680,7 @@ select.filters-window {
 }
 
 .modal-content input[type="text"]:focus + label{
-	display: block;
+	color: #5b9ddf;
 }
 
 .modal-content input[type="text"]:focus{
@@ -1700,10 +1700,8 @@ input[type="text"].user-text{
 	top: -14px;
 	left: 20px;
 	font-size: 11px;
-	color: #5b9ddf;
-	display: none;
+	color: #f8f7f4;
 }
-
 
 
 .modal-content input.send-btn {
