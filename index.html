@@ -54,7 +54,7 @@
 							
 								<div class="search-form">
 									<form action="https://echo.htmlacademy.ru" method="post">
-										<input type="text" name="search" value="Что ищем?">
+										<input type="text" name="search" placeholder="Что ищем?">
 									</form>
 								</div>
 								
@@ -64,8 +64,8 @@
 							<div class="login-form">
 								
 								<form action="https://echo.htmlacademy.ru" method="post">
-									<input type="text" name="mail" value="Электронная почта">
-									<input type="password" name="password" value="Пароль">
+									<input type="text" name="mail" placeholder="Электронная почта">
+									<input type="password" name="password" placeholder="Пароль">
 									<input class="login-btn" type="submit" value="Войти">
 									<div class="login-links">
 										<a href="#">Забыли пароль?</a>
@@ -178,7 +178,7 @@
 						</div>
 						<div class="shop-item-sticker-hit"></div>
 						<a href="#"><img class="shop-item-pic" src="img/ContentCream1.png" width="200" height="200" alt=""></a>
-						<div class="shop-item-sticker-cost"><span>310 Р</span>/кг</div>
+						<div class="shop-item-sticker-cost"><span>310 &nbsp&nbsp</span> /кг</div>
 						<a class="shop-item-link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой </a>
 					</article>
 				
@@ -188,7 +188,7 @@
 						</div>
 						<div class="shop-item-sticker-hit"></div>
 						<a href="#"><img class="shop-item-pic" src="img/ContentCream2.png" width="200" height="200" alt=""></a>
-						<div class="shop-item-sticker-cost"><span>380 Р</span>/кг</div>
+						<div class="shop-item-sticker-cost"><span>380 &nbsp&nbsp</span> /кг</div>
 						<a class="shop-item-link" href="#">Сливочно-кофейное с кусочками шоколада</a>
 					</article>
 		
@@ -200,7 +200,7 @@
 							</div>
 							<div class="shop-item-sticker-hit"></div>
 							<a href="#"><img class="shop-item-pic" src="img/ContentCream3.png" width="200" height="200" alt=""></a>
-							<div class="shop-item-sticker-cost"><span>355 Р</span>/кг</div>
+							<div class="shop-item-sticker-cost"><span>355 &nbsp&nbsp</span> /кг</div>
 							<a class="shop-item-link" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
 						</article>
 				
@@ -210,7 +210,7 @@
 							</div>
 							<div class="shop-item-sticker-hit"></div>
 							<a href="#"><img class="shop-item-pic" src="img/ContentCream4.png" width="200" height="200" alt=""></a>
-							<div class="shop-item-sticker-cost"><span>415 Р</span>/кг</div>
+							<div class="shop-item-sticker-cost"><span>415 &nbsp&nbsp</span> /кг</div>
 							<a class="shop-item-link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
 						</article>
 					</div>
@@ -266,7 +266,7 @@
 							всего самого вкусного, что у нас происходит. Обещаем не спамить
 							и не слать всякой не нужной ерунды. Честно =)</p>
 						<form action="https://echo.htmlacademy.ru" method="post">
-							<input class="subscription-text" type="text" name="mail" value="Электронная почта">
+							<input class="subscription-text" type="text" name="mail" placeholder="Электронная почта">
 							<input class="subscription-btn" type="submit" value="Отправить">
 						</form>
 					</article>
@@ -278,6 +278,7 @@
 
 				<!-- Блок с картой и контактами -->
 				<div class="map">
+					<div class="yand-map" id="yandex-map"></div>
 					<div class="container clearfix">
 						<div class="map-contacts">
 							<p>Адрес главного офиса и<br> офлайн магазина: </p>
@@ -335,18 +336,18 @@
 		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 		<form action="https://echo.htmlacademy.ru" method="post">
 			<div class="modal-point">
-				<input class="user-name" type="text" name="user-name" value="Как вас зовут?"/>
+				<input class="user-name" type="text" name="user-name" placeholder="Как вас зовут?"/>
 				<label for="user-name">Как вас зовут?</label>
 			</div>
 			<div class="modal-point">
-				<input class="user-mail" type="text" name="user-mail" value="Ваша почта для ответа?"/>
+				<input class="user-mail" type="text" name="user-mail" placeholder="Ваша почта для ответа?"/>
 				<label for="user-mail">Ваша почта для ответа?</label>
 			</div>
 			<div class="modal-point">
-				<input class="user-text" type="text" name="user-text" value="Напишите что-нибудь..."/>
+				<input class="user-text" type="text" name="user-text" placeholder="Напишите что-нибудь..."/>
 				<label for="user-text">Напишите что-нибудь...</label>
 			</div>
-      		<input class="send-btn" type="submit" value="Отправить"/>
+      		<input class="send-btn" type="submit" placeholder="Отправить"/>
 		</form>
 	</div> 
 	
@@ -373,6 +374,8 @@
 		overlay.classList.remove("modal-content-show");
 		});
 	</script>
+		
+	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=9XwtNk_ve0RjQvkaT8TDjrdQyH--qf7X&width=100%&height=430&lang=ru_RU&sourceType=constructor&id=yandex-map"></script>
 		
    </body>
 	
