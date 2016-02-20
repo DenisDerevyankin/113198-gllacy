@@ -8,8 +8,14 @@
 		});	
 
 		var linkClose = document.querySelector(".modal-content-close");
-		var overlay =document.querySelector(".modal-overlay");
+		var overlay = document.querySelector(".modal-overlay");
 		linkClose.addEventListener("click", function(event) {
+		event.preventDefault();
+		popap.classList.remove("modal-content-show");
+		overlay.classList.remove("modal-content-show");
+		});
+		
+		overlay.addEventListener("click", function(event) {
 		event.preventDefault();
 		popap.classList.remove("modal-content-show");
 		overlay.classList.remove("modal-content-show");
