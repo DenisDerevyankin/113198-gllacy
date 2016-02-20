@@ -1512,6 +1512,12 @@ select.filters-window {
 	padding-right: 48px;
 	font-size: 16px;
 	margin-left: -5px;
+	/*for WebKit*/
+	-webkit-appearance: none;
+	/* for FF */
+	-moz-appearance: none;
+	text-indent: 0.01px; 
+	text-overflow: '';
 }
 
 .filters-top-title {
