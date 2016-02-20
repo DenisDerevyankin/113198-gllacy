@@ -1,4 +1,3 @@
-<script>
 		var link = document.querySelector(".map-contacts-btn");
 		var popap = document.querySelector(".modal-content");
 		var overlay =document.querySelector(".modal-overlay");
@@ -15,6 +14,3 @@
 		popap.classList.remove("modal-content-show");
 		overlay.classList.remove("modal-content-show");
 		});
-</script>
-		
-	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=ddZHNwNFntkweu38ou94xHO3SVr1MDf0&height=430&lang=ru_RU&sourceType=constructor&id=yandex-map"></script>
