@@ -51,8 +51,9 @@ body{
 
 .slide-btn {
   display: inline-block;
-  padding: 12px 44px;
-
+  padding: 11px 42px;
+  margin-left: 4px;
+  margin-top: 2px;
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
@@ -99,8 +100,8 @@ body{
 
 .slider-controls {
   position: absolute;
-  bottom: 65px;
-  left: -20px;
+bottom: 62px;
+left: -25px;
   z-index: 20;
 
   font-size: 0;
@@ -156,11 +157,11 @@ body > input[type="radio"] {
 
 .site-wrapper:before,
 .site-wrapper:after {
-  background-image: url("slide-1.png");
+  background-image: url("../img/BkgrCream1.png");
 }
 
 .site-wrapper:after {
-  background-image: url("slide-2.png");
+  background-image: url("../img/BkgrCream3.png");
 }
 
 .main-header {
@@ -175,14 +176,14 @@ body > input[type="radio"] {
 	background-repeat: no-repeat;
 	width: 154px;
 	height: 64px;
-	margin-left: -27px;
-	margin-right: 15px;
+	margin-left: -30px;
+    margin-right: 14px;
 	margin-top: 10px;
 }
 
 .main-navigation {
   float: left;
-	margin-top: 5px;
+    margin-top: 4px;
 	margin-right: 42px;
 }
 
@@ -385,7 +386,7 @@ body > input[type="radio"] {
 .user-action-cart {
   border-radius: 18px;
   position: relative;
-  padding: 6px 41px;
+  padding: 6px 40px;
 }
 
 .user-action-cart::before{
@@ -685,11 +686,11 @@ body > input[type="radio"] {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
-  padding-left: 20px;
+  padding-left: 18px;
   font-weight: bold;
   font-size: 18px;
   box-sizing: border-box;
-
+  min-height: 230px;
 }
 
 .gratis {
@@ -729,13 +730,19 @@ body > input[type="radio"] {
   font-weight: bold;
   font-size: 18px;
   box-sizing: border-box;
+	min-height: 230px;
+}
+
+.gratis-chocolate .gratis-btn{
+	width: 190px;
+    height: 45px;
 }
 
 .shop {
   margin-bottom: 35px;
   margin-top: 40px;
 	width: 860px;
-  margin-left: -20px;
+  margin-left: -24px;
 }
 
 .shop-item {
@@ -765,20 +772,20 @@ body > input[type="radio"] {
   color: #000000;
   background-image: url("../img/PatternWafer.jpg");
   border-radius: 20px;
-  min-height: 375px;
+  min-height: 370px;
   line-height: 22px;
 	box-sizing: border-box;
 	width: 860px;
-	margin-left: -20px;
+	margin-left: -24px;
 }
 
 .information-head {
   float: left;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 24px;
   font-weight: 500;
   line-height: 30px;
-  margin-left: 20px;
+  margin-left: 17px;
   width: 90%;
 }
 
@@ -787,7 +794,7 @@ body > input[type="radio"] {
   color: #000000;
   line-height: 22px;
 	width: 860px;
-	margin-left: -20px;
+	margin-left: -24px;
 }
 
 .dump-news {
@@ -809,7 +816,8 @@ body > input[type="radio"] {
 	margin: 0;
 	font-size: 16px;
 	font-weight: normal;
-	margin-bottom: 16px;
+	margin-top: 3px;
+    margin-bottom: 8px;
 }
 
 .dump-subscription {
@@ -844,7 +852,7 @@ body > input[type="radio"] {
   position: absolute;
   float: right;
   margin-top: 65px;
-  padding-top: 5px;
+  padding-top: 8px;
   width: 300px;
   min-height: 299px;
   padding-left: 28px;
@@ -854,6 +862,7 @@ body > input[type="radio"] {
   line-height: 22px;
   right: 2.3%;
   box-sizing: border-box;
+  padding-left: 23px;
 }
 
 .map-contacts p{
@@ -875,9 +884,13 @@ body > input[type="radio"] {
 	font-size: 18px;
 	font-weight: bold;
 	display: block;
-	margin-bottom: 15px;
+	margin-bottom: 18px;
 }
 
+strong.mobile-number {
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
 
 .main-footer {
 	min-height: 98px;
@@ -888,7 +901,7 @@ body > input[type="radio"] {
   float: left;
   display: block;
   font-size: 0px;
-	margin-left: -20px;
+  margin-left: -25px;
 }
 
 .footer-social a:last-child{
@@ -899,9 +912,9 @@ body > input[type="radio"] {
 .footer-links {
   float: left;
   font-size: 13px;
-  margin-left: 60px;
+  margin-left: 66px;
   line-height: 22px;
-	margin-top: -5px;
+  margin-top: -5px;
 }
 
 .footer-links a{
@@ -913,7 +926,7 @@ body > input[type="radio"] {
   font-size: 12px;
   padding-top: 37px;
   position: relative;
-
+  margin-right: -23px;
 }
 
 .footer-copyright a{
@@ -932,12 +945,13 @@ body > input[type="radio"] {
 	float: left;
 	position: relative;
 	width: 344px;
-	padding-left: 78px;
+	padding-left: 76px;
 	font-size: 16px;
 }
 
 .information-point p{
 	margin-top: 0px;
+	margin-bottom: 22px;
 }
 
 .breacrumbs {
@@ -1177,24 +1191,25 @@ body > input[type="radio"] {
 
 .gratis-btn {
 	float: right;
-	width: 168px;
-	right: 0px;
-	bottom: 0px;
-	box-sizing: border-box;
-	margin-right: 20px;
-	margin-bottom: 24px;
-	color: white;
-	text-decoration: none;
-	text-align: center;
-	font-size: 18px;
-	padding-bottom: 13px;
-	padding-top: 13px;
-	background: #f26843;
-	background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-	background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-	background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-	border-radius: 100px;
-  	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+    width: 165px;
+    box-sizing: border-box;
+    margin-right: 22px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 13px;
+    padding-top: 10px;
+    background: #f26843;
+    background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    border-radius: 100px;
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.gratis-raspberry .gratis-btn{
+	margin-top: 6px;
 }
 
 .shop-item-sticker-hit {
@@ -1208,7 +1223,7 @@ body > input[type="radio"] {
 .shop-item-sticker-cost {
 	position: absolute;
 	bottom: 100px;
-	left: -7px;
+	left: -2px;
 	font-weight: bold;
 	font-size: 30px;
 	cursor: pointer;
@@ -1222,8 +1237,8 @@ body > input[type="radio"] {
 	background-repeat: no-repeat;
 	width: 50px;
 	height: 50px;
-	top: -6px;;
-	left: 87px;
+	top: -4px;
+    left: 80px;
 }
 
 .item-sticker-cost:after{
@@ -1252,18 +1267,26 @@ body > input[type="radio"] {
 
 .cream-icon {
 	background-position: -215px -10px;
+	top: -13px;
+    left: 20px;
 }
 
 .list-icon {
 	background-position: -78px -10px;
+	top: 120px;
+    left: 20px;
 }
 
 .cow-icon {
 	background-position: -9px -10px;
+	top: -13px;
+    left: 17px;
 }
 
 .templ-icon {
 	background-position: -147px -10px;
+	top: 120px;
+    left: 18px;
 }
 
 .navigation-sub-new {
@@ -1297,23 +1320,25 @@ body > input[type="radio"] {
 .dump-news-link {
 	font-size: 24px;
 	font-weight: bold;
-	color: black;
+	color: #353535;
+    line-height: 26px;
+    background-color: rgba(255,255,255,0.7);
 }
 
 
 
 .map-contacts-btn {
 	position: absolute;
-	font-size: 17px;
-	font-weight: bold;
-	padding: 14px 35px;
-	border-radius: 28px;
-	background-color: #eb563b;
-	color: white;
-	text-decoration: none;
-	right: 20px;
-	bottom: 30px;
-	
+    font-size: 17px;
+    font-weight: bold;
+    padding: 12px 33px;
+    border-radius: 28px;
+    background-color: #eb563b;
+    color: white;
+    text-decoration: none;
+    right: 26px;
+    bottom: 23px;
+    margin-top: 30px;
 }
 
 .subscription-btn {
@@ -1330,6 +1355,7 @@ body > input[type="radio"] {
 	background:         linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
 	border-radius: 100px;
 	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	margin-left: 6px;
 }
 
 .subscription-text {
@@ -1915,4 +1941,5 @@ input{
 
 .yand-map {
 	position: absolute;
+	width: 100%;
 }
