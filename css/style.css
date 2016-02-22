@@ -10,18 +10,21 @@ body{
 	width: 900px;
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: 2.3%;
-	padding-right: 2.3%;
+	padding-left: 20px;
+	padding-right: 20px;
 	position: relative;
 	box-sizing: border-box;
+	
 }
 
 .site-wrapper{
-	min-width: 940px;
+	min-width: 900px;
 	background-color: #849d8f;
 	background-repeat: no-repeat;
 	background-position: top center;
 	transition: background-image 0.5s ease, background-color 0.5s ease;
+	box-sizing: border-box;
+	
 }
 
 .content-wrapper {
@@ -99,7 +102,7 @@ body{
 .slider-controls {
 	position: absolute;
 	bottom: 62px;
-	left: -25px;
+	left: 0px;
 	z-index: 20;
 
 	font-size: 0;
@@ -173,7 +176,7 @@ body > input[type="radio"] {
 	background-repeat: no-repeat;
 	width: 154px;
 	height: 64px;
-	margin-left: -30px;
+	margin-left: -3px;
 	margin-right: 14px;
 	margin-top: 10px;
 }
@@ -289,7 +292,7 @@ body > input[type="radio"] {
 .user-action {
 	float: right;
 	position: relative;
-	margin-right: 0px;
+	width: 265px;
 }
 
 .user-action ul{
@@ -480,7 +483,7 @@ body > input[type="radio"] {
 	width: 244px;
 	padding: 15px 18px;
 	top:60px;
-	right: 100px;
+	right: 120px;
 	display: none;
 }
 
@@ -521,7 +524,7 @@ body > input[type="radio"] {
 	background-color: #f8f7f4;
 	border-radius: 10px;
 	width: 540px;
-	right: -30px;
+	right: 0px;
 	top: 60px;
 	padding-top: 12px;
 	padding-bottom: 20px;
@@ -648,7 +651,6 @@ body > input[type="radio"] {
 	text-align: right;
 	padding: 0px;
 	margin-top: 13px;
-	margin-right: -20px;
 }
 
 .intelligence p{
@@ -683,7 +685,7 @@ body > input[type="radio"] {
 	float: left;
 	width: 48.85%;
 	margin-right: 2.3%;
-	background-image: url("../img/BkgrRaspberries.png") ;
+	background-image: url("../img/BkgrRaspberries.jpg") ;
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 20px;
@@ -697,8 +699,6 @@ body > input[type="radio"] {
 .gratis {
 	margin-bottom: 40px;
 	line-height: 22px;
-	width: 860px;
-	margin-left: -23px;
 }
 
 .gratis h2{
@@ -724,7 +724,7 @@ body > input[type="radio"] {
 .gratis-chocolate {
 	float: right;
 	width: 48.85%;
-	background-image: url("../img/BkgrChocolate.png");
+	background-image: url("../img/BkgrChocolate.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	border-radius: 17px;
@@ -743,8 +743,6 @@ body > input[type="radio"] {
 .shop {
 	margin-bottom: 35px;
 	margin-top: 40px;
-	width: 860px;
-	margin-left: -24px;
 }
 
 .shop-item {
@@ -778,8 +776,6 @@ body > input[type="radio"] {
 	min-height: 370px;
 	line-height: 22px;
 	box-sizing: border-box;
-	width: 860px;
-	margin-left: -24px;
 }
 
 .information-head {
@@ -796,15 +792,14 @@ body > input[type="radio"] {
 	margin-bottom: 40px;
 	color: #000000;
 	line-height: 22px;
-	width: 860px;
-	margin-left: -24px;
+
 }
 
 .dump-news {
 	float: left;
 	width: 48.85%;
 	margin-right: 2.3%;
-	background-image: url("../img/BkgrStrawberry.png"); 
+	background-image: url("../img/BkgrStrawberry.jpg"); 
 	background-repeat: no-repeat;
 	padding-top: 22px;
 	padding-left: 18px;
@@ -826,14 +821,14 @@ body > input[type="radio"] {
 .dump-subscription {
 	float: right;
 	width: 48.85%;
-	background-image: url("../img/BkgrPost.png");
+	background-image: url("../img/BkgrPost.jpg");
 	background-repeat: no-repeat;
 	box-sizing: border-box;
 	padding-left: 26px;
 	padding-right: 27px;
 	padding-top: 35px;
 	padding-bottom: 38px;
-	border-radius: 10px;
+	border-radius: 20px;
 	background-position: center;
 }
 
@@ -904,7 +899,6 @@ strong.mobile-number {
 	float: left;
 	display: block;
 	font-size: 0px;
-	margin-left: -25px;
 }
 
 .footer-social a:last-child{
@@ -933,7 +927,6 @@ strong.mobile-number {
 	font-size: 12px;
 	padding-top: 37px;
 	position: relative;
-	margin-right: -23px;
 }
 
 .footer-copyright a{
@@ -973,7 +966,6 @@ strong.mobile-number {
 	padding: 0;
 	margin: 0;
 	margin-top: -40px;
-	margin-left: -25px;
 }
 
 .breacrumbs i{
@@ -1004,13 +996,11 @@ strong.mobile-number {
 	font-size: 35px;
 	line-height: 30px;
 	float: left;
-	margin-left: -28px;
 }
 
 .filters {
 	margin-bottom: 40px;
 	width: 860px;
-	margin-left: -20px;
 }
 
 
@@ -1030,6 +1020,7 @@ strong.mobile-number {
 	float: left;
 	margin-right: 10px;
 	position: relative;
+	width: 194px;
 }
 
 .filters-top-price {
@@ -1447,7 +1438,6 @@ strong.mobile-number {
 
 .shop-navigation {
 	margin-top: 44px;
-	margin-right: -22px;
 }
 
 .shop-navigation ul{
@@ -1511,13 +1501,19 @@ select.filters-window {
 	padding-left: 10px;
 	padding-right: 48px;
 	font-size: 16px;
-	margin-left: -5px;
+
 	/*for WebKit*/
 	-webkit-appearance: none;
 	/* for FF */
 	-moz-appearance: none;
 	text-indent: 0.01px; 
 	text-overflow: '';
+	/* for IE */
+	-ms-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .filters-top-title {
@@ -1627,7 +1623,6 @@ select.filters-window {
 	font-size: 16px;
 	font-weight: 500;
 	margin-right: 15px;
-	margin-left: -5px;
 	width: 670px;
 }
 
@@ -1839,7 +1834,6 @@ input[type="text"].user-text{
 	height: 1px;
 	margin-bottom: 20px;
 	width: 860px;
-	margin-left: -24px;
 }
 
 .item-hover {
@@ -1901,7 +1895,6 @@ input[type="text"].user-text{
 .catalog-shop {
 	box-sizing: border-box;
 	width: 860px;
-	margin-left: -25px;
 }
 
 .modal-point {
